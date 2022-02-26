@@ -8,12 +8,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
 public class BishopBlackTest {
+
     @Test
     public void testPosition() {
         Figure figure = new BishopBlack(Cell.C1);
         Cell expected = Cell.C1;
         assertThat(figure.position(), is(expected));
     }
+
     @Test
     public void testCopy() {
         Figure startMove = new BishopBlack(Cell.C1);
